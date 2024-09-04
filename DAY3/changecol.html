@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100% ;
+        }
+        .bb{
+            color: red;
+            background-color: black;
+            border: 2px;
+            border-color: rgb(0, 21, 255);
+            box-shadow: red 0 0 70px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 40%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="box">
+
+    </div>
+    <input type="color" id="inputfield">
+    <br>
+    <hr>
+    <button  class="bb"onclick="inc()">+</button>
+    <h1 id="counter">0</h1>
+    <button class="bb" onclick="dec()">-</button>
+    <script>
+        var box=document.getElementById("box");
+        var inputfield=document.getElementById("inputfield");
+        inputfield.addEventListener('change',()=>{
+            box.style.backgroundColor=inputfield.value;
+        }
+    )
+    count=0;
+
+    function inc(){
+        count=count+1
+        var counter=document.getElementById("counter");
+
+        counter.innerHTML=count
+
+    }
+
+    function dec(){
+        if(count>0){
+            count=count-1;
+            var counter=document.getElementById("counter");
+            counter.innerHTML=count
+        }
+    }
+    </script>
+</body>
+</html>
