@@ -2,7 +2,7 @@
 setInterval(() => {
     for(i=0;i<6;i++){
         result=result+i;
-        return;
+        
     
         
 }
