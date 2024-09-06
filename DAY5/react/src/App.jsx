@@ -8,6 +8,7 @@ import Signup from './components/signup';
 import Login from './components/login';
 
 import {BrowserRouter,Routes,Route,Link} from 'react-router-dom';
+import './App.css'
 
 export default function App() {
   const[count,setCount]=useState(0);
@@ -34,7 +35,7 @@ export default function App() {
 
       <BrowserRouter>
       <a href='/login'>login button</a>
-      
+
       <Routes>
         <Route path="/" element={<Signup></Signup>} />
         <Route path="/login" element={<Login></Login>} />

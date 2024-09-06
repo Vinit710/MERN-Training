@@ -9,7 +9,7 @@ export default function() {
         <h1>componet</h1>
         <img src={myImage} alt="My Image" />
 
-        <button onClick={handlezzzzzzzzzzzzzzzzzzzzzzzzzzzz}></button>
+        <button onClick={handle}></button>
 
 
         
